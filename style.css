@@ -1,0 +1,53 @@
+#header {
+  height: 15vh;
+  background-color: #42036a;
+  display: flex;
+  justify-content: space-between;
+}
+#logo {
+  margin: 0% 4%;
+  height: 100%;
+  cursor: pointer;
+}
+#logo > img {
+  height: 100%;
+}
+#navbar {
+  width: 50%;
+  margin-right: 4%;
+}
+#navlist {
+  list-style: none;
+  display: flex;
+  color: #ff004d;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+#navlist > li {
+  margin: 10px;
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: 200ms;
+}
+#navlist > li:hover {
+  border-bottom: 2px solid #ff004d;
+}
+#log {
+  background-color: #ff004d;
+  border-radius: 8px;
+  width: 6rem;
+  height: 2.3em;
+  color: aliceblue;
+  font-weight: 500;
+  border-color: transparent;
+  cursor: pointer;
+}
+#log:hover {
+  font-weight: 600;
+  border-bottom: none;
+}
+body {
+  margin: 0%;
+}
