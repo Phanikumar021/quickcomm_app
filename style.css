@@ -87,6 +87,7 @@ body {
   color: aliceblue;
   border-radius: 15px;
   width: 8em;
+  cursor: pointer;
 }
 #search > input {
   width: 50%;
@@ -98,7 +99,7 @@ body {
 #catalog {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 50px;
   width: 88%;
   margin-left: 6%;
@@ -110,6 +111,11 @@ body {
   border-radius: 15px;
   cursor: pointer;
   background-color: #d1cfd1b8;
+  transition: 200ms;
+}
+#card:hover {
+  background-color: #d1cfd161;
+  box-shadow: 5px 5px rgba(175, 174, 174, 0.733);
 }
 #prod_data {
   margin: 20px;

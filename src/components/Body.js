@@ -1,7 +1,8 @@
 import dataset from "../../assets/constants/test_data";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const Body = () => {
   const [data, setdata] = useState(dataset);
+  const [searchtxt, setsearchtxt] = useState("");
   return (
     <div id="home-body">
       <div id="body-L1">
@@ -39,8 +40,25 @@ const Body = () => {
           </button>
         </div>
         <div id="search">
-          <input type="search" />
-          <button>search</button>
+          <input
+            type="search"
+            value={searchtxt}
+            onChange={(e) => {
+              setsearchtxt(e.target.value);
+            }}
+          />
+          <button
+            onClick={() => {
+              const searchlist = dataset.filter((item) => {
+                return item.display_name
+                  .toLowerCase()
+                  .includes(searchtxt.toLowerCase());
+              });
+              setdata(searchlist);
+            }}
+          >
+            search
+          </button>
         </div>
       </div>
       <div id="catalog">
