@@ -103,7 +103,7 @@ body {
 #catalog {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 50px;
   width: 88%;
   margin-left: 6%;

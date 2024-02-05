@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import About from "./About";
 const Header = () => {
   const [value, setvalue] = useState("Login");
   return (
