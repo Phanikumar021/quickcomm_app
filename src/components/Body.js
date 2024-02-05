@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 const Body = () => {
   const [data, setdata] = useState(dataset);
   const [searchtxt, setsearchtxt] = useState("");
+  // const prod_data = fetch();
   return (
     <div id="home-body">
       <div id="body-L1">

@@ -31,6 +31,10 @@
   border-bottom: 2px solid transparent;
   transition: 200ms;
 }
+a {
+  color: #ff004d;
+  text-decoration: none;
+}
 #navlist > li:hover {
   border-bottom: 2px solid #ff004d;
 }
@@ -135,4 +139,34 @@ body {
 }
 #L2 > h4 {
   font-weight: 400;
+}
+#abt {
+  display: flex;
+  width: 100%;
+}
+#abttxt {
+  width: 40%;
+  font-size: larger;
+  font-weight: 500;
+  text-align: center;
+  margin: 2%;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 3%;
+}
+#abtimg {
+  width: 50%;
+  margin: 3%;
+  margin-top: 5%;
+}
+#abtimg > img {
+  width: 100%;
+}
+#error {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  border: 5px solid black;
+  padding: 5%;
+  border-radius: 15px;
 }

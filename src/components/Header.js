@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import About from "./About";
 const Header = () => {
   const [value, setvalue] = useState("Login");
   return (
@@ -11,8 +13,12 @@ const Header = () => {
       </div>
       <div id="navbar">
         <ul id="navlist">
-          <li>Home</li>
-          <li>About</li>
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link to={"/About"}>About</Link>
+          </li>
           <li>Join us</li>
           <li>Customer care</li>
           <li>Cart</li>
