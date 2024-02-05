@@ -73,6 +73,7 @@ body {
   color: aliceblue;
   border-radius: 15px;
   width: 8em;
+  cursor: pointer;
 }
 #search {
   margin: auto;

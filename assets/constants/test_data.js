@@ -1,4 +1,4 @@
-const data = [
+const dataset = [
   {
     display_name: "Origami Kitchen Towels 4 In 1 2 Ply",
     ad_tracking_context: null,
@@ -1685,7 +1685,7 @@ const data = [
     inline_message: null,
     avail: true,
     ad_item: false,
-    in_stock: true,
+    in_stock: false,
     is_avail: true,
     product_id: "GUYL58QHIR",
     product_name_without_brand: "Camphor Cone Freshener Lavender",
@@ -4131,4 +4131,4 @@ const data = [
     product_name_without_brand: "Baking Paper Box",
   },
 ];
-export default data;
+export default dataset;

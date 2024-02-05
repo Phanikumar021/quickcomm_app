@@ -1,13 +1,42 @@
-import data from "./test_data";
+import dataset from "../../assets/constants/test_data";
+import { useState } from "react";
 const Body = () => {
+  const [data, setdata] = useState(dataset);
   return (
     <div id="home-body">
       <div id="body-L1">
         <div id="filter-btns">
           <h2>Filter products : </h2>
-          <button>economic</button>
-          <button>premium</button>
-          <button>In stock</button>
+          <button
+            onClick={() => {
+              const economiclist = dataset.filter((item) => {
+                return item.variations[0].price.mrp < 300;
+              });
+              setdata(economiclist);
+            }}
+          >
+            economic
+          </button>
+          <button
+            onClick={() => {
+              const premiumlist = dataset.filter((item) => {
+                return item.variations[0].price.mrp > 300;
+              });
+              setdata(premiumlist);
+            }}
+          >
+            premium
+          </button>
+          <button
+            onClick={() => {
+              const availabilist = dataset.filter((item) => {
+                return item.in_stock;
+              });
+              setdata(availabilist);
+            }}
+          >
+            In stock
+          </button>
         </div>
         <div id="search">
           <input type="search" />
