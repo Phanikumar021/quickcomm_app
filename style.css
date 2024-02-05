@@ -94,3 +94,38 @@ body {
   height: 2.2em;
   margin-right: 5px;
 }
+#catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 88%;
+  margin-left: 6%;
+}
+#card {
+  width: 28%;
+  border: 1px solid rgba(102, 101, 101, 0.522);
+  margin-bottom: 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #d1cfd1b8;
+}
+#prod_data {
+  margin: 20px;
+}
+#prod_img {
+  /* margin: auto; */
+  width: 80%;
+  margin-left: 10%;
+  border-bottom: 1px solid black;
+}
+#prod_img > img {
+  width: 100%;
+}
+#L1 {
+  display: flex;
+  justify-content: space-between;
+}
+#L2 > h4 {
+  font-weight: 400;
+}
